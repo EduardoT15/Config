@@ -8,7 +8,7 @@ promptinit
 
 alias ls='ls --color=auto'
 alias p='sudo pacman'
-alias mountwin='sudo mount -t ntfs-3g /dev/sda3 Windows'
+alias mountwin='sudo mount -t ntfs-3g /dev/sdb3 Windows'
 alias startsvc='sudo systemctl start'
 alias stopsvc='sudo systemctl stop'
 alias enablesvc='sudo systemctl enable'
