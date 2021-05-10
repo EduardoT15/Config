@@ -53,3 +53,25 @@ augroup END
 if has('syntax') && has('eval')
   packadd! matchit
 endif
+
+" Theme
+let g:airline_theme='kolor'
+
+" Scrollback fix for st
+set ttymouse=sgr
+
+" If can't find extention of a file, assume it's a shell script
+autocmd BufNewFile,BufRead * if expand('%:t') !~ '\.' | set syntax=sh | endif
+
+" Line numbers and cursorline
+set background=dark " Sets color scheme for dark background
+set relativenumber 
+set cursorline
+highlight LineNR ctermfg=darkgrey
+
+" Removes the underline causes by enabling cursorline:
+highlight clear CursorLine
+highlight clear CursorLineNR
+
+" Sets the current line number to white:
+highlight CursorLineNR cterm=bold ctermfg=White   
