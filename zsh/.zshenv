@@ -1,5 +1,6 @@
 #zshenv
 #User environment variables
+#You can source this in your init script (.xprofile, .xinitrc or other)
 
 export ZDOTDIR=$HOME/.config/zsh
 
